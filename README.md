@@ -1,8 +1,14 @@
-# Security-Mechanisms
-A space to learn about cryptography, hashing, authentication, etc.
+# Mecanismos de Segurança da Informação
 
-## 1. Introduction
-## 2. Symmetric Cryptography
+Esse material foi produzido durante a monitoria da disciplina de sistemas distribuídos (2022.1) e busca ensinar sobre conceitos básicos de segurança como criptografia e hashing.
+
+## 1. Introdução
+## 2. Criptografia Simétrica
+[Colab]()
 ## 3. Hashing
-## 4. Assymmetric Cryptography
-## 5. Digital Signing/Certificates
+### Message authentication codes
+### Salted Hashes
+### Password Hashing
+## 4. Criptografia Simétrica
+### Assinaturas Digitais
+### Certificados Digitais
