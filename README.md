@@ -5,9 +5,11 @@ Esse material foi produzido durante a monitoria da disciplina de sistemas distri
 ## 1. Introdução
 [Vídeo sobre introudção a conceitos de segurança da informação](https://www.youtube.com/watch?v=KBXA3CqaVeI)
 ## 2. Criptografia Simétrica
-[Colab sobre Criptografia Simétrica](https://github.com/raissonsouto/Mecanismos-de-seguranca-da-informacao/blob/main/colabs/Criptografia_sim%C3%A9trica_com_Python.ipynb)
+- [Video sobre criptografia simétrica](https://www.youtube.com/watch?v=Ba0tfsuTgoY)
+- [Colab sobre Criptografia Simétrica](https://github.com/raissonsouto/Mecanismos-de-seguranca-da-informacao/blob/main/colabs/Criptografia_sim%C3%A9trica_com_Python.ipynb)
 - [AES Explained (Advanced Encryption Standard) - Computerphile](https://www.youtube.com/watch?v=O4xNJsjtN6E)
 ## 3. Hashing
+- [Vídeo sobre hashing](https://www.youtube.com/watch?v=nH2fQVVdUK8)
 - [Colab sobre Hashing](https://github.com/raissonsouto/Mecanismos-de-seguranca-da-informacao/blob/main/colabs/Hashing_com_Python.ipynb)
 - [Colab sobre Password Hashing](https://github.com/raissonsouto/Mecanismos-de-seguranca-da-informacao/blob/main/colabs/Salted_hashes_com_Python.ipynb)
 
@@ -19,7 +21,8 @@ Vídeos em inglês sobre o tema<br />
 - [How NOT to Store Passwords! - Computerphile](https://www.youtube.com/watch?v=8ZtInClXe1Q)
 - [Securing Stream Ciphers (HMAC) - Computerphile](https://www.youtube.com/watch?v=wlSG3pEiQdc)
 ## 4. Criptografia Simétrica
-[Colab sobre criptografia assimétrica](https://github.com/raissonsouto/Mecanismos-de-seguranca-da-informacao/blob/main/colabs/Criptografia_assim%C3%A9trica_com_Python.ipynb)<br />
+- [Vídeo sobre criptografia simétrica](https://www.youtube.com/watch?v=MdqYbgdxHCQ)
+- [Colab sobre criptografia assimétrica](https://github.com/raissonsouto/Mecanismos-de-seguranca-da-informacao/blob/main/colabs/Criptografia_assim%C3%A9trica_com_Python.ipynb)<br />
 **Links úteis**
 - [Public Key Cryptography - Computerphile](https://www.youtube.com/watch?v=GSIDS_lvRv4)
 ## 5. Assinaturas/Certificados Digitais
