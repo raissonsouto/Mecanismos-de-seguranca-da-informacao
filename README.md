@@ -1,23 +1,26 @@
 # Mecanismos de Segurança da Informação
 
-Esse material foi produzido durante a monitoria da disciplina de sistemas distribuídos (2022.1) e busca ensinar sobre conceitos básicos de segurança como criptografia e hashing.
+Esse material foi inicialmente produzido durante a monitoria da disciplina de sistemas distribuídos (2022.1) e busca ensinar sobre conceitos básicos de segurança como criptografia e hashing.
 
 ## 1. Introdução
+
 ### Termos Chave
 
-O NIST (National Institute of Standards and Technology) é uma agência do governo dos Estados Unidos responsável por desenvolver e promover padrões para diversas áreas, incluindo criptografia.
+O NIST (National Institute of Standards and Technology) é uma agência do governo dos Estados Unidos responsável por desenvolver e promover padrões para diversas áreas, incluindo a segurança da informação. Suas recomendações são amplamente adotadas no mercado e por isso vão ser utilizadas como referência.
 
-```Confidencialidade``` é a proteção de informações confidenciais ou sensíveis de pessoas ou organizações, impedindo que sejam acessadas ou divulgadas por indivíduos não autorizados. A confidencialidade é um dos princípios básicos da segurança da informação.
+```Confidencialidade``` é a proteção de informações confidenciais ou sensíveis de pessoas ou organizações, impedindo que sejam acessadas ou divulgadas por indivíduos não autorizados.
 
-```Integridade``` é a proteção de informações para garantir que elas não sejam alteradas, danificadas ou destruídas por indivíduos não autorizados. A integridade é outro princípio importante da segurança da informação.
+```Integridade``` é a proteção de informações para garantir que elas não sejam alteradas, danificadas ou destruídas por indivíduos não autorizados.
 
 ```Disponibilidade``` refere-se à capacidade de garantir que as informações estejam acessíveis e utilizáveis quando necessárias. Isso envolve a garantia de que sistemas e serviços estejam disponíveis e operacionais para atender às necessidades dos usuários.
 
 ```Privacidade vs Anonimato:``` Privacidade refere-se ao direito de uma pessoa controlar o acesso e o uso de informações pessoais que pertencem a ela. Por outro lado, anonimato é a capacidade de se manter oculto ou desconhecido, sem ter que revelar sua identidade. Enquanto a privacidade se concentra no controle sobre o uso de informações pessoais, o anonimato se concentra em permanecer desconhecido.
 
-```security strength```
+```Security Strength``` é a medida de quão difícil é para um adversário mal-intencionado quebrar a segurança de um sistema criptográfico. Ela depende de diversos fatores, como o algoritmo criptográfico utilizado, o tamanho da chave criptográfica, o tamanho e complexidade da entrada e a resistência do sistema a diferentes tipos de ataques. Geralmente, é medida em bits e é um fator crítico na escolha e avaliação de algoritmos criptográficos e sistemas de segurança.
 
-```Números aleatórios```
+```Números aleatórios``` são cruciais para manter a segurança da informação em muitos sistemas criptográficos e protocolos de segurança. Números aleatórios são usados para gerar chaves criptográficas, proteger contra ataques de replay e fornecer variedade para algoritmos de criptografia. No entanto, a geração de números verdadeiramente aleatórios é difícil em sistemas computacionais, sendo necessário utilizar geradores de números pseudoaleatórios. É importante garantir a qualidade dos números aleatórios gerados para evitar vulnerabilidades e explorações maliciosas.
+
+### Links úteis
 
 - [Vídeo sobre introudção a conceitos de segurança da informação](https://www.youtube.com/watch?v=KBXA3CqaVeI)
 
@@ -27,7 +30,7 @@ O NIST (National Institute of Standards and Technology) é uma agência do gover
 
 ```Criptografia simétrica``` é um método de criptografia que usa a mesma chave para criptografar e descriptografar dados. Isso significa que a chave compartilhada deve ser mantida em segredo para garantir a segurança dos dados.
 
-```Cifra de fluxo``` é um tipo de criptografia que opera em bits individuais em uma sequência de dados, enquanto a **cifra de bloco** criptografa blocos fixos de dados. A cifra de fluxo funciona gerando uma corrente de bits pseudoaleatórios (chave de fluxo) que é combinada com os dados originais para criptografar e descriptografar. A cifra de bloco opera em blocos fixos de dados e geralmente requer ```padding``` para preencher o último bloco, que pode não estar cheio.
+```Cifra de fluxo``` é um tipo de criptografia que opera em bits individuais em uma sequência de dados, enquanto a ```cifra de bloco``` criptografa blocos fixos de dados. A cifra de fluxo funciona gerando uma corrente de bits pseudoaleatórios (chave de fluxo) que é combinada com os dados originais para criptografar e descriptografar. A cifra de bloco opera em blocos fixos de dados e geralmente requer _padding_ para preencher o último bloco, que pode não estar cheio.
 
 ```Modos de operação``` são métodos que especificam como a cifra de bloco deve ser usada para criptografar dados maiores que um bloco. Existem vários modos de operação, incluindo ECB (Electronic Codebook), CBC (Cipher Block Chaining), CTR (Counter), GCM (Galois/Counter Mode), etc. Cada modo tem seus prós e contras em termos de segurança, eficiência e facilidade de implementação.
 
@@ -62,13 +65,13 @@ Atividade práticas
 
 ```Message Authentication Codes (MACs)``` são valores curtos usados para verificar a autenticidade e integridade de uma mensagem. Eles são frequentemente usados em sistemas de comunicação seguros para garantir que uma mensagem não foi modificada ou falsificada durante a transmissão. A função de hash é usada para gerar um MAC, que é anexado à mensagem original. O destinatário pode verificar a autenticidade da mensagem recalculando o MAC usando a mesma função de hash e verificando se ele coincide com o valor enviado junto com a mensagem.
 
-
-- [Colab sobre Hashing](https://github.com/raissonsouto/Mecanismos-de-seguranca-da-informacao/blob/main/colabs/Hashing_com_Python.ipynb)
-- [Colab sobre Password Hashing](https://github.com/raissonsouto/Mecanismos-de-seguranca-da-informacao/blob/main/colabs/Salted_hashes_com_Python.ipynb)
-
 ### Recomendações de uso
 
-O NIST recomenda o uso de SHA-256
+O NIST recomenda o uso de algoritmos de hashing criptográficos fortes, como SHA-256, SHA-384 ou SHA-512. Esses algoritmos produzem valores de hash de tamanho fixo e são projetados para serem resistentes a colisões e a ataques de preenchimento.
+
+O NIST também recomenda o uso de funções de hash criptográficas projetadas especificamente para senhas, como PBKDF2, bcrypt, scrypt ou argon2. Esses algoritmos são projetados para serem deliberadamente lentos e consumir muitos recursos computacionais, o que dificulta o trabalho de um atacante que tenta adivinhar senhas usando força bruta.
+
+Por fim, o NIST recomenda o uso de algoritmos de autenticação de mensagem (MACs) baseados em criptografia de bloco, como AES-CMAC, ou em funções de hash criptográficas, como HMAC-SHA256. Esses algoritmos são usados para garantir a integridade e autenticidade de mensagens em ambientes de comunicação seguros.
 
 ### Links úteis
 
@@ -82,8 +85,12 @@ Vídeos
 Outros<br />
 
 - [Simulador de funções hash](https://emn178.github.io/online-tools/sha256.html)
+- [Colab sobre Hashing](https://github.com/raissonsouto/Mecanismos-de-seguranca-da-informacao/blob/main/colabs/Hashing_com_Python.ipynb)
+- [Colab sobre Password Hashing](https://github.com/raissonsouto/Mecanismos-de-seguranca-da-informacao/blob/main/colabs/Salted_hashes_com_Python.ipynb)
 
 ## 4. Criptografia Assimétrica
+
+### Termos chave
 
 ### Links úteis
 
@@ -101,7 +108,11 @@ Outros
 
 ### Links úteis
 
+- [Tutorial básico de OpenSSL]()
+
 Vídeos
 
+- [Vídeo sobre assinaturas digitais](https://www.youtube.com/watch?v=Zg9Y-zeh7So)
+- [Vídeo sobre certificados digitais](https://www.youtube.com/watch?v=U17Wi4dlTCM)
 - [What are Digital Signatures? - Computerphile](https://www.youtube.com/watch?v=s22eJ1eVLTU) :uk:
 - [Prime Numbers & RSA Encryption Algorithm - Computerphile](https://www.youtube.com/watch?v=JD72Ry60eP4) :uk:
