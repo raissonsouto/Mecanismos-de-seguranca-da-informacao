@@ -92,12 +92,11 @@ Outros<br />
 
 ### Termos chave
 
-Chave pública: uma chave de criptografia que é distribuída publicamente e pode ser usada para criptografar mensagens que só podem ser decodificadas com a chave privada correspondente.
+```Chave pública:``` uma chave de criptografia que é distribuída publicamente e pode ser usada para criptografar mensagens que só podem ser decodificadas com a chave privada correspondente.
 
-Chave privada: uma chave de criptografia que é mantida em segredo e pode ser usada para decodificar mensagens criptografadas com a chave pública correspondente.
-Criptografia de chave pública: um método de criptografia que usa um par de chaves, uma pública e uma privada, para criptografar e decodificar mensagens.
+```Chave privada:``` uma chave de criptografia que é mantida em segredo e pode ser usada para decodificar mensagens criptografadas com a chave pública correspondente.
 
-Algoritmo de criptografia assimétrica: um conjunto de regras e procedimentos matemáticos que são usados para criptografar e decodificar mensagens usando chaves públicas e privadas.
+```Criptografia de chave pública:``` um método de criptografia que usa um par de chaves, uma pública e uma privada, para criptografar e decodificar mensagens.
 
 ### Links úteis
 
@@ -114,13 +113,13 @@ Outros
 
 ### Termos chave
 
-Assinatura digital: um código criptografado que é adicionado a uma mensagem para verificar a identidade do remetente e garantir a integridade da mensagem.
+```Assinatura digital:``` um código criptografado que é adicionado a uma mensagem para verificar a identidade do remetente e garantir a integridade da mensagem.
 
-Certificado digital: um arquivo digital que contém informações sobre a identidade de um indivíduo ou organização, incluindo a chave pública correspondente, que é usado para verificar a identidade e autenticidade de um remetente.
+```Certificado digital:``` um arquivo digital que contém informações sobre a identidade de um indivíduo ou organização, incluindo a chave pública correspondente, que é usado para verificar a identidade e autenticidade de um remetente.
 
-Autoridade Certificadora (CA): uma organização ou entidade confiável que emite certificados digitais e garante a identidade e autenticidade dos usuários.
+```Autoridade Certificadora (CA):``` uma organização ou entidade confiável que emite certificados digitais e garante a identidade e autenticidade dos usuários.
 
-Infraestrutura de chave pública (PKI): um sistema de tecnologia e políticas que são usados para gerenciar a segurança de comunicações eletrônicas, incluindo a emissão e verificação de certificados digitais.
+```Infraestrutura de chave pública (PKI):``` um sistema de tecnologia e políticas que são usados para gerenciar a segurança de comunicações eletrônicas, incluindo a emissão e verificação de certificados digitais.
 
 
 
